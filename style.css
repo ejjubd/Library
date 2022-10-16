@@ -99,6 +99,11 @@ tfoot{
 .table-icons img{
     height: 25px;
 }
+
+#status a{
+    text-decoration: none;
+    color: rgb(147, 167, 204);
+}
 #table-footer-icons-delete img{
  height: 30px;
  padding-left: 10px;
