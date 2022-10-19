@@ -109,10 +109,15 @@ tfoot{
  padding-left: 10px;
  
 }
-
+#table-footer-icons-book{
+    background-color: rgb(49, 49, 49);
+    border: none;
+}
 #table-footer-icons-book img, #table-footer-icons-recycle img {
     height: 50px;
 }
+
+
 .statistics{
   display: flex;
   justify-content:space-between;
@@ -157,6 +162,8 @@ tfoot{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
+    display:none;
+
     
     
 }
@@ -172,24 +179,20 @@ tfoot{
 }
 
 .close {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 600;
     color: rgb(111, 167, 204);
    
   }
 #close-button{
-   height: 38px;
+   height: 45px;
    width: 30px;
    float: right;
    background-color: rgb(114, 113, 114);
    border: none;
-   margin-right: 10px;
+   margin-right: 15px;
    margin-top: 5px;
    
-
-    
-  
-  
 }
 #new-book{
     padding: 30px;

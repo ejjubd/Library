@@ -1,3 +1,37 @@
+const closeButton = document.querySelector("#close-button")
+const addBookButton = document.querySelector("#table-footer-icons-book")
+
+closeButton.addEventListener('click', function(){
+    document.getElementById("add-book-window").style.display = 'none'
+
+})
+
+addBookButton.addEventListener('click',function(){
+    document.getElementById("add-book-window").style.display = 'block' 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const MyObject = {
     nesto: 77
 }
