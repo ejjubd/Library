@@ -23,7 +23,7 @@
     <div class="main-container">
         
     
-        <table>
+        <table >
             <thead>
                 <tr class="tr">
                     <th><input type="checkbox" name="" id=""></th>
@@ -38,7 +38,7 @@
                 </tr>
             </thead>
             <tbody id="table">
-                <tr>
+                <tr >
                     <th><input type="checkbox" name="" id=""></th>
                     <th>Thus Spoke Zaratustra</th>
                     <th>Friedrich Nietzsche</th>
@@ -47,8 +47,8 @@
                     <th>02. 02. 2022.</th>
                     <th> <a id="status" href="">Read</a> </th>
                     <th >
-                        <a class="table-icons" href=""><img src="./images/delete.png" alt=""></a>
-                        <a class="table-icons" href=""><img src="./images/edit.png" alt=""></a>
+                        <button class="table-icons" > <img src="./images/delete.png" alt=""> </button>
+                     <button class="table-icons" id="edit-book1" >  <img src="./images/edit.png" alt=""> </button>
                     </th>
               </tr>
                
@@ -133,7 +133,30 @@
    
 </div>
 
-
+<div id="edit-book-window">
+    <button id="edit-close-button"><span class="close">&times;</span></button>
+    <h3>Edit Book Details</h3>
+    <form id="edit-book" action="">
+   
+     <label for="new-title">Title</label>
+     <input id="new-title" type="text"  name="" value="">
+     <label for="new-author">Author</label>
+     <input id="new-author" type="text" name="" value="">
+     <label for="new-pages">Pages</label>
+     <input id="new-pages"  type="number" name="" value="">
+     <label for="new-published">Published</label>
+     <input type="date" name="" id="new-published" value="" >
+     <label for="new-acquired">Acquired</label>
+     <input type="date" name="" id="new-acquired" value="">
+     <label for="new-status">Status</label>
+     <select name="" id="new-status">
+         <option value="Read">Read</option>
+         <option value="Unread">Unread</option>
+     </select>
+     <button id="add-book-button" type = "button">Edit</button>
+    </form>
+    
+ </div>
     <script src="script.js"></script>
 </body>
 </html>

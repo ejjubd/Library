@@ -1,12 +1,16 @@
-const closeButton = document.querySelector("#close-button")
+const closeButtonAddBookWindow = document.querySelector("#close-button")
 const addNewBookButton = document.querySelector("#table-footer-icons-book")
 const addBookSubmit = document.querySelector('#add-book-button')
+const closeButtonEditWindow = document.querySelector("#edit-close-button")
 
-closeButton.addEventListener('click', function(){
+closeButtonAddBookWindow.addEventListener('click', function(){
     document.getElementById("add-book-window").style.display = 'none'
 
 })
+closeButtonEditWindow.addEventListener('click', function(){
+    document.getElementById("edit-book-window").style.display = 'none'
 
+})
 addNewBookButton.addEventListener('click',function(){
     document.getElementById("add-book-window").style.display = 'block' 
 })
@@ -48,7 +52,7 @@ th7 = document.createElement('th');
 th7.innerHTML = `<a id="status" href="">${newStatus}</a>`;
 
 th8 = document.createElement('th');
-th8.innerHTML = '<a class="table-icons" href=""><img src="./images/delete.png" alt=""></a><a class="table-icons" href=""><img src="./images/edit.png" alt=""></a>';
+th8.innerHTML = '<button class="table-icons" > <img src="./images/delete.png" alt=""> </button><button  class="table-icons" >  <img src="./images/edit.png" alt=""> </button>';
 
 
 
@@ -71,8 +75,47 @@ document.getElementById('new-status').value = ''
     
  })
     
+const editButton1 = document.getElementById('edit-book1')
+editButton1.addEventListener('click', function(){
+    
+    document.getElementById("edit-book-window").style.display = 'block'
 
-function Book (title, author, pages, hasread){
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ function Book (title, author, pages, hasread){
     this.title = title
     this.author = author
     this.pages = pages
@@ -81,6 +124,7 @@ function Book (title, author, pages, hasread){
         console.log(title, author, pages, hasread)
     }
 }
+
 
 const Book1 = new Book ('Dostojevski', 'Rat i mir', 986, 'not read yet');
 
