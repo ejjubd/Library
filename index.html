@@ -25,7 +25,7 @@
     
         <table>
             <thead>
-                <tr>
+                <tr class="tr">
                     <th><input type="checkbox" name="" id=""></th>
                    
                     <th><a href=""> Title</a></th>
@@ -37,33 +37,22 @@
                     <th>&nbsp;</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table">
                 <tr>
-                    <th><input type="checkbox"></th>
+                    <th><input type="checkbox" name="" id=""></th>
                     <th>Thus Spoke Zaratustra</th>
                     <th>Friedrich Nietzsche</th>
                     <th>352</th>
                     <th>07. 07. 1892.</th>
                     <th>02. 02. 2022.</th>
-                    <th id="status"><a href="">Read</a> </th>
-                    <th class="table-icons">
-                        <a href=""><img src="./images/delete.png" alt=""></a>
-                        <a href=""><img src="./images/edit.png" alt=""></a>
+                    <th> <a id="status" href="">Read</a> </th>
+                    <th >
+                        <a class="table-icons" href=""><img src="./images/delete.png" alt=""></a>
+                        <a class="table-icons" href=""><img src="./images/edit.png" alt=""></a>
                     </th>
-                    
-                   
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                
+              </tr>
+               
+          
           
             </tbody>
             <tfoot>
@@ -125,7 +114,7 @@
    <form id="new-book" action="">
   
     <label for="new-title">Title</label>
-    <input type="text">
+    <input  type="text">
     <label for="new-author">Author</label>
     <input type="text">
     <label for="new-pages">Pages</label>
@@ -139,8 +128,9 @@
         <option value="0">Read</option>
         <option value="1">Unread</option>
     </select>
-    <button id="add-book-button" type="submit">Add Book</button>
+    <button id="add-book-button" type = "button">Add Book</button>
    </form>
+   
 </div>
 
 
