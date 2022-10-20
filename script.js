@@ -17,7 +17,13 @@ addNewBookButton.addEventListener('click',function(){
 
 addBookSubmit.addEventListener('click',function(){
    const newTitle= document.getElementById('new-title').value ;
-    const getTable= document.getElementById('table');
+   const newAuthor = document.getElementById('new-author').value
+   const newPages = document.getElementById('new-pages').value
+   const newPublished = document.getElementById('new-published').value
+   const newAcquired = document.getElementById('new-acquired').value
+   const newStatus = document.getElementById('new-status').value
+  
+   const getTable= document.getElementById('table');
     createNewRow = document.createElement('tr');
     getTable.appendChild(createNewRow);
     
@@ -27,19 +33,19 @@ th1.innerHTML = '<input type="checkbox" name="" id="">';
 th2 = document.createElement('th');
 th2.innerHTML = `${newTitle}`;
 th3 = document.createElement('th');
-th3.innerHTML = 'Title';
+th3.innerHTML = `${newAuthor}`;
 
 th4 = document.createElement('th');
-th4.innerHTML = 'Title';
+th4.innerHTML = `${newPages}`;
 
 th5 = document.createElement('th');
-th5.innerHTML = 'Title';
+th5.innerHTML = `${newPublished}`;
 
 th6 = document.createElement('th');
-th6.innerHTML = 'Title';
+th6.innerHTML = `${newAcquired}`;
 
 th7 = document.createElement('th');
-th7.innerHTML = '<a id="status" href="">Read</a>';
+th7.innerHTML = `<a id="status" href="">${newStatus}</a>`;
 
 th8 = document.createElement('th');
 th8.innerHTML = '<a class="table-icons" href=""><img src="./images/delete.png" alt=""></a><a class="table-icons" href=""><img src="./images/edit.png" alt=""></a>';
@@ -57,7 +63,11 @@ createNewRow.appendChild(th8);
    
 document.getElementById("add-book-window").style.display = 'none' 
 document.getElementById('new-title').value = ''  
-
+document.getElementById('new-author').value = ''
+document.getElementById('new-pages').value = ''
+document.getElementById('new-published').value = ''
+document.getElementById('new-acquired').value = ''
+document.getElementById('new-status').value = ''
     
  })
     
